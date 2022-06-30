@@ -1,0 +1,13 @@
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light animated fadeIn">
+    <div class="card h-100 animated fadeIn" style="align-items: center;">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" style="width: 30%; height: 30%;">
+    </div>
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">{{heroe.nombre}}</h1>
+        <p class="lead fw-normal">{{heroe.bio}}</p>
+        <div class="card h-100" style="align-items: center;">
+            <img *ngIf="heroe.casa == 'Marvel'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" class="card-img-top" [alt]="heroe.nombre" style="width: 40%; height: 40%;">
+            <img *ngIf="heroe.casa == 'DC'" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg" class="card-img-top" [alt]="heroe.nombre" style="width: 40%; height: 40%;">
+        </div>
+    </div>
+</div>
